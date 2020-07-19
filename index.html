@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" class="fp-enabled" style="overflow: visible; height: initial;"><head>
 
-    <title>Svatba Verča &amp; Petr</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Svatba Veru &amp; Petr</title>
+    <meta name="author" content="Petr Cizek &amp; Verca Martonova">
+    <meta name="description" content="Milá rodino a&nbsp;přátelé, už se na Vás moc těšíme! Doufáme, že si společně užijeme skvělý den plný hudby, jídla, smíchu a&nbsp;pohody.">
+    <meta name="keywords" content="">
+    <meta name="Resource-type" content="Document">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
-Hello world
+ <div class="menu">
+   <div class="menu-header">Veru &amp; Petr</div>
+   <div class="menu-item">Dobré vědět</div>
+   <div class="menu-item">Místo a doprava</div>
+   <div class="menu-item">Náš den</div>
+ </div>
+ <div class="menu menu-blur">
+ </div>
+
+ <div id="b1_bg" class="bg b1_bg">
+   TEST
+ </div>
+ <div id="b2_bg" class="bg b2_bg">
+   TEST
+ </div>
+ <div id="b3_bg" class="bg b3_bg">
+   TEST
+ </div>
+  
+  
+  Hello world
+    <script type="text/javascript">
+      /*
+      var b1_bg = document.getElementById('b1_bg');
+      document.addEventListener('scroll', 
+        function(e){
+          var offset = window.pageYOffset;
+          console.log(offset);
+          b1_bg.style.top = (100+offset) + 'px';
+          //$('.b1_bg').css('top',100+offset/5+'%')
+        }
+      );*/
+    document.addEventListener("wheel", function (e) {
+
+    // get the old value of the translation (there has to be an easier way than this)
+    var oldVal = parseInt(document.getElementById("body").style.transform.replace("translateY(","").replace("px)",""));
+
+    // to make it work on IE or Chrome
+    var variation = parseInt(e.deltaY);
+    
+    // update the body translation to simulate a scroll
+    document.getElementById("body").style.transform = "translateY(" + (oldVal - variation) + "px)";
+
+    return false;
+    
+}, true);
+    </script>
 </body>
 </html>
