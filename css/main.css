@@ -29,6 +29,10 @@
   /* background-color:#b5803b; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu-blur {
   z-index:78;
   background-color:#ffffff;
@@ -88,6 +92,7 @@
   background-repeat: no-repeat;
   min-height:30px;
   padding-bottom:0px;
+  padding-top:20px;
 }
 
 h2 {
