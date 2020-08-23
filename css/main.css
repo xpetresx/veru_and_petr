@@ -1,6 +1,21 @@
 @font-face{
-  font-family: 'MyWebFont';
-  src: url('../fonts/static/DancingScript-Bold.ttf') format('truetype');
+  font-family: 'HandWriteFont';
+  src: url('../fonts/DancingScript/static/DancingScript-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'LibreBaskerville';
+  src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Amatic';
+  src: url('../fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'AmaticB';
+  src: url('../fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype');
 }
 
 .menu {
@@ -9,7 +24,7 @@
   left:0px;
   top:0px;
   width:100%;
-  height:61px;
+  height:67px;
   color: #5f0220;
   /* background-color:#b5803b; */
 }
@@ -25,18 +40,19 @@
 }
 
 .menu-header {
+  padding-top:0px;
   padding-left:30px;
   display:inline-block;
-  font: 220% / 2 MyWebFont; 
+  font: 350% / 1.2 AmaticB; 
   float:left;
 }
 
 .menu-item {
-  padding-top:10px;
+  padding-top:0px;
   padding-left:15px;
   padding-right:15px;
   display:inline-block;
-  font: 160% / 2 MyWebFont; 
+  font: 220% / 2 AmaticB; 
   float:right;
   color: #5f0220;
   transition: padding-top 0.2s;
@@ -47,30 +63,48 @@
   color: #b5803b;
 }
 
-.bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom:0;
-  left:0;
-  overflow: hidden;
+.content {
+  width:100%;
+  height:100%;
+  min-height:100vh;
+  position: static;
+  padding-top:0px;
+  overflow: auto;
+  /*border: 4px solid #000000;*/
 }
 
-.b1_bg {
-  top:0;
-  background-image: url(../img/hp-banner1.jpg);
+.b1c {
+  background-image: url(../img/bg.jpg);
   background-position: center;
   background-size: auto 100% ;
   background-repeat: no-repeat;
-  z-index:1;
 }
 
-.b2_bg {
-  top:90%;
-  z-index:2;
+.hline {
+  position:static;
+  background-image: url(../img/Image004.png);
+  background-position: center;
+  background-size: auto 70% ;
+  background-repeat: no-repeat;
+  min-height:30px;
+  padding-bottom:0px;
 }
 
-.b3_bg {
-  top:200%;
-  z-index:3;
+h2 {
+  display:block;
+  font: 250% / 0.2 AmaticB; 
+  float:left;
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+th,td {
+  padding-left: 40px;
+  font: 120% / 2 LibreBaskerville; 
+  vertical-align:top;
 }

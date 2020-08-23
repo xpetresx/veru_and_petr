@@ -10,55 +10,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="scripts/counter.js"></script>
 
 </head>
 <body>
  <div class="menu">
    <div class="menu-header">Veru &amp; Petr</div>
-   <div class="menu-item">Dobré vědět</div>
-   <div class="menu-item">Místo a doprava</div>
+   <div class="menu-item">Momentky</div>
+   <div class="menu-item">Q &amp; A</div>
    <div class="menu-item">Náš den</div>
  </div>
  <div class="menu menu-blur">
  </div>
 
- <div id="b1_bg" class="bg b1_bg">
-   TEST
+ <div id="b1" class="content b1c">
  </div>
- <div id="b2_bg" class="bg b2_bg">
-   TEST
+ <div id="b2" class="content">
+   <br><br><br><br><br>
+   <h2>Milá rodino a přátelé, těšíme se na Vás a doufáme, že si společně užijeme skvělý den plný hudby, jídla, smíchu a pohody.</h2>
+   <div id="counter" class="cnt"></div>
  </div>
- <div id="b3_bg" class="bg b3_bg">
-   TEST
+ <div class="hline"></div>
+ <div id="b3" class="content">
+   <h2>PROGRAM SVATEBNÍHO DNE</h2>
+   <br><br><br><br><br><br>
+   <div id="program" class="text">
+     <table>
+       <tr>
+         <td>10:30</td> 
+         <td style="color: #5f0220; font-weight:bold;">Příjezd hostů</td>
+       </tr>
+       <tr>
+         <td>11:00 - 12:00</td> 
+         <td style="color: #5f0220; font-weight:bold;">Svatební obřad</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td style="color:#7a7a7a;">
+           Kaple Vzkříšení<br>
+           Tanvaldská 51<br>
+           Liberec 30 - Vratislavice<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.3678511779258!2d15.092392000649516!3d50.743390698189536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935b2cbd3be43%3A0xa9ba14a0f2c9186f!2sResurrection%20Chapel!5e0!3m2!1sen!2scz!4v1598174569676!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0; padding:15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </td>
+       </tr>
+       <tr>
+         <td>12:00 - 13:00</td> 
+         <td style="color: #5f0220; font-weight:bold;">Společné focení v parku</td>
+       </tr>
+       <tr>
+         <td>13:00</td> 
+         <td style="color: #5f0220; font-weight:bold;">Přesun na Jizerku na společnou oslavu pro pozvané hosty</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td style="color:#7a7a7a;">
+           Penzion Pyramida<br>
+           Jizerka 1004<br>
+           Kořenov<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1059.8185028085818!2d15.34483338219871!3d50.81843004617628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ece0d0e8abad5%3A0x754c7ebac2e70a3!2sPyramida!5e0!3m2!1sen!2scz!4v1598175781679!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </td>
+       </tr>
+       <tr>
+        <td>14:00</td> 
+        <td style="color: #5f0220; font-weight:bold;">Společný oběd</td>
+       </tr>
+       <tr>
+         <td>16:00</td> 
+         <td style="color: #5f0220; font-weight:bold;">Krájení dortu</td>
+       </tr>
+       <tr>
+        <td>18:00</td> 
+        <td style="color: #5f0220; font-weight:bold;">První tanec novomanželů</td>
+       </tr>
+       <tr>
+        <td>20:00 - do rána</td> 
+        <td style="color: #5f0220; font-weight:bold;">Večerní zábava &amp; raut</td>
+       </tr>
+       <tr><td style="text-align:center; color:#7a7a7a;" colspan="2">(Program se může v závislosti na okolnostech měnit)</2></tr>
+     </table>
+     
+   </div>
+   <br><br><br><br><br>
  </div>
+ <div class="hline"></div>
+ <div id="b4" class="content">
+   <h2>Q &amp; A</h2>
+ </div>
+ <div class="hline"></div>
+ <div id="b5" class="content">
+   <h2>MOMENTKY Z NAŠEHO ŽIVOTA</h2>
+ </div>
+ <div class="hline"></div>
   
   
-  Hello world
-    <script type="text/javascript">
-      /*
-      var b1_bg = document.getElementById('b1_bg');
-      document.addEventListener('scroll', 
-        function(e){
-          var offset = window.pageYOffset;
-          console.log(offset);
-          b1_bg.style.top = (100+offset) + 'px';
-          //$('.b1_bg').css('top',100+offset/5+'%')
-        }
-      );*/
-    document.addEventListener("wheel", function (e) {
-
-    // get the old value of the translation (there has to be an easier way than this)
-    var oldVal = parseInt(document.getElementById("body").style.transform.replace("translateY(","").replace("px)",""));
-
-    // to make it work on IE or Chrome
-    var variation = parseInt(e.deltaY);
-    
-    // update the body translation to simulate a scroll
-    document.getElementById("body").style.transform = "translateY(" + (oldVal - variation) + "px)";
-
-    return false;
-    
-}, true);
-    </script>
 </body>
 </html>
