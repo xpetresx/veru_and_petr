@@ -8,6 +8,10 @@
     <meta name="keywords" content="">
     <meta name="Resource-type" content="Document">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Caching behavior -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -19,6 +23,7 @@
 </head>
 <body>
 
+  <!-- Masthead -->
   <nav class="menu navbar navbar-expand-lg navbar-light bg-light ontop-all" id="myskickynavbar1">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -62,81 +67,105 @@
  </div>
   -->
 
- <div id="b1" class="content b1c">
+ <div id="b1" class="b1c">
+   <div id="counter" class="cnt"></div>
  </div>
  <div id="b2" class="content">
    <br><br><br><br><br>
    <h2>Milá rodino a přátelé, těšíme se na Vás a doufáme, že si společně užijeme skvělý den plný hudby, jídla, smíchu a pohody.</h2>
-   <div id="counter" class="cnt"></div>
  </div>
- <div id="b3" class="hline"></div>
- <div class="content">
-   <h2>PROGRAM SVATEBNÍHO DNE</h2>
-   <br><br><br><br><br><br>
-   <div id="program" class="text">
-     <table>
-       <tr>
-         <td>10:30</td> 
-         <td style="color: #5f0220; font-weight:bold;">Příjezd hostů</td>
-       </tr>
-       <tr>
-         <td>11:00 - 12:00</td> 
-         <td style="color: #5f0220; font-weight:bold;">Svatební obřad</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td style="color:#7a7a7a;">
-           Kaple Vzkříšení<br>
-           Tanvaldská 51<br>
-           Liberec 30 - Vratislavice<br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.3678511779258!2d15.092392000649516!3d50.743390698189536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935b2cbd3be43%3A0xa9ba14a0f2c9186f!2sResurrection%20Chapel!5e0!3m2!1sen!2scz!4v1598174569676!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0; padding:15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-         </td>
-       </tr>
-       <tr>
-         <td>12:00 - 13:00</td> 
-         <td style="color: #5f0220; font-weight:bold;">Společné focení v parku</td>
-       </tr>
-       <tr>
-         <td>13:00</td> 
-         <td style="color: #5f0220; font-weight:bold;">Přesun na Jizerku na společnou oslavu pro pozvané hosty</td>
-       </tr>
-       <tr>
-         <td></td>
-         <td style="color:#7a7a7a;">
-           Penzion Pyramida<br>
-           Jizerka 1004<br>
-           Kořenov<br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1059.8185028085818!2d15.34483338219871!3d50.81843004617628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ece0d0e8abad5%3A0x754c7ebac2e70a3!2sPyramida!5e0!3m2!1sen!2scz!4v1598175781679!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-         </td>
-       </tr>
-       <tr>
-        <td>14:00</td> 
-        <td style="color: #5f0220; font-weight:bold;">Společný oběd</td>
-       </tr>
-       <tr>
-         <td>16:00</td> 
-         <td style="color: #5f0220; font-weight:bold;">Krájení dortu</td>
-       </tr>
-       <tr>
-        <td>18:00</td> 
-        <td style="color: #5f0220; font-weight:bold;">První tanec novomanželů</td>
-       </tr>
-       <tr>
-        <td>20:00 - do rána</td> 
-        <td style="color: #5f0220; font-weight:bold;">Večerní zábava &amp; raut</td>
-       </tr>
-       <tr><td style="text-align:center; color:#7a7a7a;" colspan="2">(Program se může v závislosti na okolnostech měnit)</2></tr>
-     </table>
-     
-   </div>
-   <br><br><br><br><br>
- </div>
- <div id="b4" class="hline"></div>
- <div class="content">
-   <h2>Q &amp; A</h2>
- </div>
- <div id="b5" class="hline"></div>
- <div class="content">
+ <!--<div id="b3" class="hline"></div>-->
+
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <h2>PROGRAM SVATEBNÍHO DNE / WEDDING DAY SCHEDULE</h2>
+        <br><br><br>
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/vratislavice.jpg');border:"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <p class="lead mb-0">
+          
+           <table>
+             <tr>
+               <td width="200px">10:00</td> 
+               <td style="color: #5f0220; font-weight:bold;">Příjezd hostů / Guests arrival</td>
+             </tr>
+             <tr>
+               <td>10:30 - 11:30</td> 
+               <td style="color: #5f0220; font-weight:bold;">Svatební obřad / Wedding ceremony</td>
+             </tr>
+             <tr>
+               <td></td>
+               <td style="color:#7a7a7a;">
+                 Kaple Vzkříšení<br>
+                 Tanvaldská 51<br>
+                 46311 Vratislavice nad Nisou<br>
+                 <a href="https://goo.gl/maps/yRELSWNt1YvrHziJA" target="_blank">[ukázat na mapě/show on map]</a>
+                 <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.3678511779258!2d15.092392000649516!3d50.743390698189536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935b2cbd3be43%3A0xa9ba14a0f2c9186f!2sResurrection%20Chapel!5e0!3m2!1sen!2scz!4v1598174569676!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0; padding:15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+               </td>
+             </tr>
+            </table>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/park.jpg');"></div>
+        <div class="col-lg-6 my-auto showcase-text" >
+          <p class="lead mb-0">
+           <table>
+             <tr>
+               <td width="200px">11:30 - 12:15</td> 
+               <td style="color: #5f0220; font-weight:bold;">Společné focení v parku / Photoshoot in the nearby park</td>
+             </tr>
+             <tr>
+               <td>12:15</td> 
+               <td style="color: #5f0220; font-weight:bold;">Přesun na Jizerku na společnou oslavu pro pozvané hosty / Transfer to Jizerka for the launch and party for the invited guests</td>
+             </tr>
+             <tr>
+               <td></td>
+               <td style="color:#7a7a7a;">
+                 Penzion Pyramida<br>
+                 Jizerka 1004<br>
+                 Kořenov<br>
+                 <a href="https://goo.gl/maps/bFukbvRAGDFnUh719" target="_blank">[ukázat na mapě/show on map]</a>
+                 <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1059.8185028085818!2d15.34483338219871!3d50.81843004617628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ece0d0e8abad5%3A0x754c7ebac2e70a3!2sPyramida!5e0!3m2!1sen!2scz!4v1598175781679!5m2!1sen!2scz" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+               </td>
+             </tr>
+             </table>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/jizerka.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <p class="lead mb-0" id="test">
+          <table>
+           <tr>
+            <td width="200px">13:30</td> 
+            <td style="color: #5f0220; font-weight:bold;">Společný oběd / Launch</td>
+           </tr>
+           <tr>
+             <td>15:00</td> 
+             <td style="color: #5f0220; font-weight:bold;">Krájení dortu / Cake serving</td>
+           </tr>
+           <tr>
+            <td>18:00</td> 
+            <td style="color: #5f0220; font-weight:bold;">První tanec novomanželů / First dance</td>
+           </tr>
+           <tr>
+            <td>20:00 - end</td> 
+            <td style="color: #5f0220; font-weight:bold;">Večerní zábava &amp; raut / Evening party and raut</td>
+           </tr>
+           </table>
+        </div>
+      </div>
+      <center>
+      *Program se v závislosti na okolnostech může změnit / Program may change based on current status
+      </center>
+    </div>
+  </section>
+
+
+
    <h2>MOMENTKY Z NAŠEHO ŽIVOTA</h2>
 
     <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
@@ -170,9 +199,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
- </div>
- <div class="hline"></div>
-  
+
   
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

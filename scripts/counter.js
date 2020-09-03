@@ -17,41 +17,8 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
       //format the output
-      var d_tag = " dní "
-      var h_tag = " hodin "
-      var m_tag = " minut "
-      var s_tag = " vteřin "
-
-      if (days <= 4 && days != 0) {
-        d_tag = " dny "
-      } 
-      if (days == 1) {
-        d_tag = " den "
-      }
-
-      if (hours <= 4 && hours != 0) {
-        h_tag = " hodiny "
-      }
-      if (hours == 1) {
-        h_tag = " hodina "
-      }
-
-      if (minutes <= 4 && minutes != 0) {
-        m_tag = " minuty "
-      }
-      if (minutes == 1) {
-        m_tag = " minuta "
-      }
-
-      if (seconds <= 4 && seconds != 0) {
-        s_tag = " vteřiny "
-      }
-      if (seconds == 1) {
-        s_tag = " vteřina "
-      }
-
-      document.getElementById("counter").innerHTML = days + d_tag + hours + h_tag
-      + minutes + m_tag + seconds + s_tag;
+      document.getElementById("counter").innerHTML = days + " D<br>" + hours + " H<br>"
+      + minutes + " M<br>" + seconds + " S<br>";
         
       // If the count down is over, write some text 
       if (distance < 0) {
