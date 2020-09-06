@@ -80,7 +80,7 @@ html {
 .b1c {
   width: 100%;
   min-height: 49vw;
-  background-image: url(../img/invitation_front_wo_text.png);
+  background-image: url(../img/bg_pair.png);
   background-position: center;
   background-size: contain ;
   background-repeat: no-repeat;
@@ -106,6 +106,17 @@ h2 {
   width: 100%;
 }
 
+h4 {
+  display:block;
+  font-family: "Lucida Console", Courier, monospace;
+  font: 160% / 1.2 Courier; 
+  font-weight:bold;
+  color:#5f0220;
+  float:left;
+  text-align: center;
+  width: 100%;
+}
+
 table {
   margin-left:auto;
   margin-right:auto;
@@ -120,7 +131,7 @@ th,td {
 
 #carousel-indicators img {
   width: auto;
-  height: 16rem;
+  height: 26rem;
   max-height: 16rem;
 }
 
@@ -205,6 +216,7 @@ header.masthead h1 {
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 900px) {
@@ -286,20 +298,6 @@ footer.footer {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-#carousel-indicators img {
-  width: auto;
-  height: 16rem;
-  max-height: 16rem;
-}
-
-.carousel-item img {
-  width: 100%;
-  min-height: 300px;
-  background: cover;
-  object-fit: cover;
-  overflow: hidden;
 }
 
 /* unvisited link */
