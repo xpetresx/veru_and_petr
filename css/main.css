@@ -97,6 +97,15 @@ html {
   padding-top:20px;
 }
 
+h1 {
+  display:block;
+  font-family: "Lucida Console", Courier, monospace;
+  font: 450% / 1.2 Courier; 
+  float:left;
+  text-align: center;
+  width: 100%;
+}
+
 h2 {
   display:block;
   font-family: "Lucida Console", Courier, monospace;
@@ -131,7 +140,7 @@ th,td {
 
 #carousel-indicators img {
   width: auto;
-  height: 26rem;
+  height: 90%hw;
   max-height: 16rem;
 }
 
