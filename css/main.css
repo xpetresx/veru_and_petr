@@ -33,9 +33,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu-blur {
-  z-index:78;
-  background-color:#ffffff;
+.notice {
+  width:100%; 
+  height:100%; 
+  position:fixed; 
+  top:50%; 
+  left:50%; 
+  transform:translate(-50%,-50%); 
+  background:white; 
+}
+
+.blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
